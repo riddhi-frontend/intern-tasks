@@ -1,0 +1,267 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+#gloria-hallelujah-regular {
+    font-family: "Gloria Hallelujah", serif;
+    font-weight: 900;
+    font-style: normal;
+}
+.main {
+    border: 3px solid black;
+    width: 60vw;
+    margin: 2% 20%;
+    padding: 20px;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    padding: 0;
+    margin: 0;
+}
+nav ul li {
+    display: inline;
+}
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+.content {
+    text-align: center;
+    margin: 80px 0px;
+}
+.content h1 {
+    font-family: cursive;
+    font-size: 2.5rem;
+    margin-bottom: 0;
+}
+.content p {
+    color: gray;
+}
+hr {
+    height: 1px;
+    background-color: black;
+    color: black;
+    width: 62.5vw;
+    margin-left: -17px;
+}
+.review {
+    margin-bottom: 60px;
+}
+.revsub {
+    display: inline-flex;
+    gap: 30px;
+}
+.rev {
+    display: inline-flexbox;
+    width: 23%;
+    border: 3px solid black;
+    border-radius: 40px;
+    padding: 20px;
+    min-height: 12vw;
+}
+.rev h5 {
+    color: #CACACA;
+    margin: 0%;
+    font-size: 16px;
+    font-weight: 500;
+}
+.secound {
+    width: 63vw;
+    margin-left: -19.5px;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+}
+.container {
+    display: flex;
+    width: 63vw;
+    border: 1px solid black;
+}
+.section {
+    border: 1px solid black;
+    padding: 15px;
+    flex: 1;
+    width: 20vw;
+}
+.projects {
+    display: flex;
+    flex-direction: column;
+}
+.projects div {
+    padding: 8px;
+    margin: 5px 0;
+}
+h3 {
+    font-family: "Cursive", sans-serif;
+    font-size: 18px;
+}
+a {
+    color: blue;
+    text-decoration: none;
+}
+.section hr
+{
+    width: 22.5vw;
+}
+.section ul li
+{
+    padding-bottom: 5px;
+    margin-left: -14%;
+}
+h6{
+    text-align: center;
+    font-size: 20px;
+}
+@media (max-width: 940px) {
+    .main
+    {
+        width: 61vw;
+    }
+    .container {
+        width: 65vw;
+    }
+    .section {
+        flex: 1;
+        width: 19vw;
+    }
+    .secound
+    {
+        width: 65.18vw;
+    }
+}
+@media (max-width: 800px) {
+    .main
+    {
+        width: 60vw;
+    }
+    .container {
+        width: 64.8vw;
+    }
+    .section {
+        flex: 1;
+        width: 11vw;
+    }
+    .secound
+    {
+        width: 65.18vw;
+    }
+    hr {
+        width: 64.5vw;
+    }
+    .projects hr
+    {
+        width: 21.5vw;
+    }
+}
+@media (min-width:318px) and (max-width:520px) {
+    body
+    {
+        overflow-x: hidden !important;
+    }
+    .main{
+        width: 80vw !important;
+        margin: 2% 10% !important;
+    }
+    .header
+    {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .header div
+    {
+        font-size: large;
+    }
+    hr {
+        width: 87vw;
+    }
+    .secound
+    {
+        width: 88vw;
+    }
+    .container
+    {
+        width: 88vw;
+    }
+    .projects hr
+    {
+        width: 29.5vw;
+    }
+    .work hr
+    {
+        width: 29vw;
+    }
+    .edu ul
+    {
+        padding-left: 20px;
+    }
+    .revsub {
+        display: flex;
+        flex-direction: column;
+    }
+    .rev {
+        width: 60%;
+        margin: auto;
+        /* min-height: 12vw; */
+    }
+}
+@media (min-width:318px) and (max-width:410px) {
+    .main{
+        width: 80vw !important;
+        margin: 2% 5% !important;
+    }
+    hr,
+    .secound,
+    .container
+    {
+        width: 90vw;
+    }
+    .projects hr
+    {
+        width: 28.5vw;
+    }
+    .edu
+    {
+        width: 25vw;
+    }
+    .edu ul
+    {
+        padding-left: 20px;
+    }
+}
+@media (min-width:318px) and (max-width:380px) {
+    .container
+    {
+        flex-direction: column;
+    }
+    .projects
+    {
+        width: 82vw;
+        padding-bottom: 0px;
+    }
+    .projects hr
+    {
+        width: 90vw;
+    }
+    .work
+    {
+        width: 82vw;
+        padding-top: 0px;
+    }
+    .edu
+    {
+        width: 82vw;
+    }
+    .edu ul
+    {
+        padding-left: 50px;
+    }
+}

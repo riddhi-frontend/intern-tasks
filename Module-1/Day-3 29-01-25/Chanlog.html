@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Changelog</title>
+    <style>
+        body {
+            box-sizing: border-box;
+            overflow-x: hidden;
+            margin: 0;
+            padding: 0;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .main {
+            width: 55vw;
+            border: 3px solid;
+            padding-top: 3%;
+            margin: 3% auto;
+            border-radius: 30px;
+        }
+        .main h1 {
+            font-size: 35px;
+            text-align: center;
+            font-weight: 400;
+            letter-spacing: -1px;
+            margin-bottom: 20px;
+        }
+        .main p {
+            color: lightgrey;
+            font-weight: 300;
+            text-align: center;
+            margin: 0%;
+        }
+        .sub {
+            display: flex;
+            justify-content: center;
+            margin-top: 5%;
+            align-items: center;
+            gap: 20px;
+        }
+        .lside li {
+            list-style-type: none;
+            color: lightgrey;
+            font-weight: 300;
+            text-align: end;
+            padding: 20px;
+        }
+        .rside li {
+            padding: 19px;
+            font-size: 18px;
+            list-style: none;
+        }
+        .dots {
+            display: flex;
+            align-items: center;
+            position: relative;
+        }
+        .dots hr {
+            width: 1px;
+            height: 69vh;
+            background-color: black;
+            margin: 0;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .subdots {
+            font-size: 36px;
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-9.5%);
+        }
+        button
+        {
+            text-align: center;
+            color: white;
+            background-color: #1E1E1E;
+            font-size: medium;
+            padding: 15px 20px;
+            border-radius: 12px;
+            border: none;
+            margin-top: 10%;
+            margin-bottom: 8%;
+            margin-left: 30%;
+        }
+        @media (min-width: 720px) {
+            .sub {
+                flex-direction: row;
+                justify-content: center;
+                gap: 20px;
+            }
+            .lside li {
+                text-align: right;
+            }
+            .rside li {
+                text-align: left;
+            }
+            button
+            {
+                margin-bottom: 8%;
+                margin-left: 30%;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <section class="main">
+        <div>
+            <h1>Changelog</h1>
+            <p>Here's everything we have shipped in the past few days</p>
+        </div>
+        <div class="sub">
+            <div class="lside">
+                <li>September 3, 2024</li>
+                <li>August 28, 2024</li>
+                <li>August 25, 2024</li>
+                <li>August 22, 2024</li>
+                <li>August 15, 2024</li>
+                <li>August 10, 2024</li>
+                <li>August 1, 2024</li>
+            </div>
+            <div class="dots">
+                <hr>
+                <div class="subdots">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </div>
+            </div>
+            <div class="rside">
+                <li>Announcing Projects on Frontend Roadmap</li>
+                <li>Build your learning habits with learning streaks</li>
+                <li>Git and GitHub Roadmap</li>
+                <li>Submit your project solution and get feedback</li>
+                <li>Backend Projects ideas</li>
+                <li>Redis roadmap</li>
+                <li>Changelog page to help you stay in the loop</li>
+            </div>
+        </div>
+
+        <button>Visit Complete Changelog</button>
+    </section>
+</body>
+</html>

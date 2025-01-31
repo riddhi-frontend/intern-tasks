@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>GALLERY</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        *,*::after,*::before
+        {
+            margin: 0;
+            padding: 0;
+            box-sizing: inherit; 
+        }
+        #container
+        {
+            width: 60%;
+            float: center;
+            margin: 5% auto; 
+        }
+        .gallery
+        {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-gap: 0.3rem; 
+        }
+        .gallery__img
+        {
+            width: 100%;
+            object-fit: cover;
+            display: block; 
+        }
+        .gallery__item--1 img,
+        .gallery__item--3 img
+        {
+            height: 60vh;
+        }
+        .gallery__item--4 img,
+        .gallery__item--6 img
+        {
+            height: 30vh;
+            margin-top: 6px;
+        }
+        .gallery__item--2
+        {
+            height: 100px;
+        }
+        .gallery__item--5 img
+        {
+            margin-top: 30%;
+            height: 62.8vh;
+        }
+        @media (max-width: 768px) {
+            #container
+            {
+                width: 80%;
+            }
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+        }
+        @media (min-width: 326px) and (max-width: 400px){
+            .gallery__item--5
+            {
+                margin-top: 36%;
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section id="container">
+        <div class="gallery">
+            <div>
+                <figure class="gallery__item--1">
+                    <img src="https://th.bing.com/th/id/OIP.610o9xraF-Y1I5hSvKwBBgHaHK?rs=1&pid=ImgDetMain" alt="Gallery image 1" class="gallery__img">
+                </figure>
+                <figure class="gallery__item gallery__item--4">
+                    <img src="https://th.bing.com/th/id/OIP.1u2Xl019W690MqO2n_qhDQHaJQ?rs=1&pid=ImgDetMain" alt="Gallery image 3" class="gallery__img">
+                </figure>
+            </div>
+
+            <div>
+            <figure class="gallery__item gallery__item--2">
+                <img src="https://img.freepik.com/free-photo/top-view-bowls-squash-soup-wooden-board_23-2148224448.jpg" alt="Gallery image 2" class="gallery__img">
+            </figure>
+            <figure class="gallery__item gallery__item--5">
+                <img src="https://pbs.twimg.com/media/E12qAamWQAAtBSS.jpg" alt="Gallery image 3" class="gallery__img">
+            </figure>
+        </div>
+
+        <div>
+            <figure class="gallery__item gallery__item--3">
+                <img src="https://th.bing.com/th/id/OIP.1u2Xl019W690MqO2n_qhDQHaJQ?rs=1&pid=ImgDetMain" alt="Gallery image 3" class="gallery__img">
+            </figure>
+            <figure class="gallery__item gallery__item--6">
+                <img src="https://th.bing.com/th/id/OIP.qrRMGJFpF1b7MUN7O5_YbAHaEK?&rs=1&pid=ImgDetMain" alt="Gallery image 3" class="gallery__img">
+            </figure>
+            </div>  
+        </div>
+    </section>
+
+</body>
+</html> 
